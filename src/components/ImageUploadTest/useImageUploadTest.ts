@@ -21,7 +21,7 @@ const useImageUploadTest = () => {
       const [previousVariant, setPreviousVariant] = React.useState<string>('');
   let data: any = { currentVariant, previousVariant };
   const test = (): any => {};
-  const onVisible = (): any => {};
+  const onVisible = (): void => { console.log('fff') };
 
   let fns: any = {test, onVisible,  setCurrentVariant, setPreviousVariant };
   return {data, fns};
