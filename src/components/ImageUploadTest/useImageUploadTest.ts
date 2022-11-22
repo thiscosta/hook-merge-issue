@@ -16,10 +16,6 @@ import React from 'react'
 //Please don't modify
 const variantOptions = { Property1Default: "Property1Default" , Property1Variant2: "Property1Variant2" , Property1Variant3: "Property1Variant3"  }
 
-  const test = (): any => {};
-  const onVisible = (param1: any): any => {};
-  const test = (): any => {};
-  const onVisible = (param1: any): any => {};
 const useImageUploadTest = () => {
   const [currentVariant, setCurrentVariant] = React.useState<string>(variantOptions['Property1Default']);
       const [previousVariant, setPreviousVariant] = React.useState<string>('');
