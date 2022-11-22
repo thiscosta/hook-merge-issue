@@ -38,7 +38,7 @@ const Property1Default: any = styled("div")({
   boxSizing: `border-box`,  
   overflow: `hidden`,  
   height: "100%",  
-  width: "100%",  
+  width: "100vw",  
 });
   
 const ImgFrame4: any = animated(styled("div", {
@@ -187,7 +187,9 @@ function ImageUploadTest(props: ImageUploadTestProps): JSX.Element {
       </ImgFrame4>
       <Frame5 >
         <Frame3 >
-          <ImgQ3DCurrentView2 onClick={fns.onVisible(props.algo)} onMouseOver={() => {  switchStateToProperty1Variant3(1.5 * 1000, 0.25 * 1000, "easeInOutBounce"); fns.setPreviousVariant(data.currentVariant); fns.setCurrentVariant("Property1Variant3");  }} onMouseOut={() => {  eval("switchStateTo" + data.previousVariant)(1.5 * 1000, 0.25 * 1000, "easeInOutBounce"); fns.setPreviousVariant("Property1Variant3"); fns.setCurrentVariant(data.previousVariant);  }}  src={`${data.currentVariant === 'Property1Variant2' ? ImgQ3DCurrentView2Image1 : data.currentVariant === 'Property1Variant3' ? ImgQ3DCurrentView2Image2 : ImgQ3DCurrentView2Image }`} alt={"img:Q_3D-Current-View2"}/>
+          {(true) &&
+            <ImgQ3DCurrentView2 onClick={fns.onVisible(props.algo)} onMouseOver={() => {  switchStateToProperty1Variant3(1.5 * 1000, 0.25 * 1000, "easeInOutBounce"); fns.setPreviousVariant(data.currentVariant); fns.setCurrentVariant("Property1Variant3");  }} onMouseOut={() => {  eval("switchStateTo" + data.previousVariant)(1.5 * 1000, 0.25 * 1000, "easeInOutBounce"); fns.setPreviousVariant("Property1Variant3"); fns.setCurrentVariant(data.previousVariant);  }}  src={`${data.currentVariant === 'Property1Variant2' ? ImgQ3DCurrentView2Image1 : data.currentVariant === 'Property1Variant3' ? ImgQ3DCurrentView2Image2 : ImgQ3DCurrentView2Image }`} alt={"img:Q_3D-Current-View2"}/>
+          }
           <Frame1 >
             <EngineeringStandup data={data}  onClick={fns.test} style={{ ...EngineeringStandupStateStyles }}>
               {`Engineering Standup`}
