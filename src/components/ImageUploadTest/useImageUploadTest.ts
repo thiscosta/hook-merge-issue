@@ -20,10 +20,7 @@ const useImageUploadTest = () => {
   const [currentVariant, setCurrentVariant] = React.useState<string>(variantOptions['Property1Default']);
       const [previousVariant, setPreviousVariant] = React.useState<string>('');
   let data: any = { currentVariant, previousVariant };
-  const test = (): any => {};
-  const onVisible = (param1:any): void => { console.log('fff') };
-
-  let fns: any = {test, onVisible,  setCurrentVariant, setPreviousVariant };
+  const { fns } = useFnsHook();
   return {data, fns};
 }
 
