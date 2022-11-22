@@ -20,7 +20,7 @@ const useImageUploadTest = () => {
   const [currentVariant, setCurrentVariant] = React.useState<string>(variantOptions['Property1Default']);
   const [previousVariant, setPreviousVariant] = React.useState<string>('');
   let data: any = { currentVariant, previousVariant };
-  const { fns } = useFnsHook();
+  let fns = { };
   return {data, fns};
 }
 
